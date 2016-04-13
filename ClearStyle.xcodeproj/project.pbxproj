@@ -12,6 +12,9 @@
 		4FE4BC861CB439DA0076E260 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE4BC841CB439DA0076E260 /* Main.storyboard */; };
 		4FE4BC881CB439DA0076E260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FE4BC871CB439DA0076E260 /* Assets.xcassets */; };
 		4FE4BC8B1CB439DA0076E260 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE4BC891CB439DA0076E260 /* LaunchScreen.storyboard */; };
+		4FE4BC951CB43D5C0076E260 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4BC941CB43D5C0076E260 /* ToDoItem.swift */; };
+		4FE4BC971CB5A7AD0076E260 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4BC961CB5A7AD0076E260 /* TableViewCell.swift */; };
+		4FE4BC991CB83C1F0076E260 /* StrikeThroughText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4BC981CB83C1F0076E260 /* StrikeThroughText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		4FE4BC871CB439DA0076E260 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FE4BC8A1CB439DA0076E260 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FE4BC8C1CB439DA0076E260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FE4BC941CB43D5C0076E260 /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		4FE4BC961CB5A7AD0076E260 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		4FE4BC981CB83C1F0076E260 /* StrikeThroughText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrikeThroughText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +62,10 @@
 			children = (
 				4FE4BC801CB439DA0076E260 /* AppDelegate.swift */,
 				4FE4BC821CB439DA0076E260 /* ViewController.swift */,
+				4FE4BC941CB43D5C0076E260 /* ToDoItem.swift */,
 				4FE4BC841CB439DA0076E260 /* Main.storyboard */,
+				4FE4BC961CB5A7AD0076E260 /* TableViewCell.swift */,
+				4FE4BC981CB83C1F0076E260 /* StrikeThroughText.swift */,
 				4FE4BC871CB439DA0076E260 /* Assets.xcassets */,
 				4FE4BC891CB439DA0076E260 /* LaunchScreen.storyboard */,
 				4FE4BC8C1CB439DA0076E260 /* Info.plist */,
@@ -136,8 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FE4BC991CB83C1F0076E260 /* StrikeThroughText.swift in Sources */,
 				4FE4BC831CB439DA0076E260 /* ViewController.swift in Sources */,
+				4FE4BC971CB5A7AD0076E260 /* TableViewCell.swift in Sources */,
 				4FE4BC811CB439DA0076E260 /* AppDelegate.swift in Sources */,
+				4FE4BC951CB43D5C0076E260 /* ToDoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,10 +262,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ClearStyle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NishanthGolla.ClearStyle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -261,10 +276,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ClearStyle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NishanthGolla.ClearStyle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
